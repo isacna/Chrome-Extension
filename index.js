@@ -1,18 +1,5 @@
 "use strict";
 
-function buildButton() {
-
-	var button = document.createElement('button');
-	button.textContent = 'title';
-	button.className = 'className';
-
-	button.addEventListener('click', init());
-
-	return button;
-
-}
-buildButton()
-
 function init() {
   setTimeout(() => {
     let states = document.querySelectorAll("div.builder-node-container");
@@ -31,6 +18,6 @@ function init() {
     }
   }, 10000);
 }
-  // setTimeout(() => {
-  //   init();
-  // }, 10000);
+  setTimeout(() => {
+    init();
+  }, 10000);
